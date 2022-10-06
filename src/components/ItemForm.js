@@ -11,7 +11,7 @@ function ItemForm({ onAddItem }) {
       category: category,
       isInCart: false,
     };
-    fetch("http://localhost:4000/items", {
+    fetch("http://localhost:3002/items", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

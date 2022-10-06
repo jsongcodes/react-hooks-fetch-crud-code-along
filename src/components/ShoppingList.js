@@ -8,7 +8,7 @@ function ShoppingList() {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-fetch('http://localhost:4000/items')
+fetch('http://localhost:3002/items')
 .then(r => r.json())
 .then(items => setItems(items))
   }, [])
